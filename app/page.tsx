@@ -37,6 +37,7 @@ export default function ValentinePage() {
             animate={{ x: noButtonPosition.x, y: noButtonPosition.y }}
             onMouseEnter={moveNoButton}
             className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600"
+            onClick={() => router.push("/damn")}
           >
             No
           </motion.button>
