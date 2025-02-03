@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 export default function Page() {
   const [showFunnyPhoto, setShowFunnyPhoto] = React.useState(false);
@@ -17,9 +18,17 @@ export default function Page() {
           Click me
         </button>
         {showFunnyPhoto ? (
-          <img src="/astridFunny.png" className="h-[300px] mx-auto" />
+          <Image
+            src="/astridFunny.png"
+            className="h-[300px] mx-auto"
+            alt={"wait"}
+          />
         ) : (
-          <img src="/happyHorses.jpg" className="h-[300px] mx-auto" />
+          <Image
+            src="/happyHorses.jpg"
+            className="h-[300px] mx-auto"
+            alt={"wait"}
+          />
         )}
         {showFunnyPhoto ? (
           <p className="text-center text-pink-800"> Great Photo</p>
