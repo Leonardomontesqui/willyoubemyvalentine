@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 
-export default function page() {
+export default function Page() {
   const [funnierPhoto, setFunnierPhoto] = useState(false);
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-pink-100 gap-2">

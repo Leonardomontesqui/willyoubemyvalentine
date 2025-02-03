@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-export default function page() {
+export default function Page() {
   const [showFunnyPhoto, setShowFunnyPhoto] = React.useState(false);
   return (
     <div className="flex items-center justify-center h-screen bg-pink-100">
